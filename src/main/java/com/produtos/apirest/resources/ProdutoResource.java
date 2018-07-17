@@ -25,18 +25,18 @@ public class ProdutoResource {
 	@Autowired
 	ProdutoRepository produtoRepository;
 	
-	@GetMapping(value="/produtos", produces="application/json")
-	public @ResponseBody List<Produto> listaProdutos(){
+	@GetMapping("/produtos")
+	public List<Produto> listaProdutos(){
 		return produtoRepository.findAll();
 	}
 	
-	@GetMapping(value="/produto/{id}", produces="application/json")
-	public @ResponseBody Produto listaProdutoUnico(@PathVariable(value="id") long id){
+	@GetMapping("/produto/{id}")
+	public Produto listaProdutoUnico(@PathVariable(value="id") long id){
 		return produtoRepository.findById(id);
 	}
 	
-	@PostMapping(value="/produto", produces="application/json")
-	public @ResponseBody Produto salvaProduto(@RequestBody @Valid Produto produto) {
+	@PostMapping("/produto")
+	public Produto salvaProduto(@RequestBody @Valid Produto produto) {
 		return produtoRepository.save(produto);
 	}
 	
@@ -46,7 +46,7 @@ public class ProdutoResource {
 	}
 	
 	@PutMapping("/produto")
-	public @ResponseBody Produto atualizaProduto(@RequestBody @Valid Produto produto) {
+	public Produto atualizaProduto(@RequestBody @Valid Produto produto) {
 		return produtoRepository.save(produto);
 	}
 	 
