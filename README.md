@@ -1,9 +1,23 @@
-# produtos-apirest
-API REST de produtos com Swagger-ui. Disponível em https://produtos-apirest.herokuapp.com/swagger-ui.html#/produto45resource
+# ApiRest Produtos
+> API REST de produtos com Swagger-ui.
 
 
-Acesso para lista de produtos: https://produtos-apirest.herokuapp.com/api/produtos
+* API Disponível em: `https://produtos-apirest.herokuapp.com/swagger-ui.html#/produto45resource`
+-----------------
 
-Acesso produto unico: https://produtos-apirest.herokuapp.com/api/produto/{id}
+* Lista de produtos - GET: `https://produtos-apirest.herokuapp.com/api/produtos`
+-----------------
 
-Salvar, Atualizar e Deletar produto: https://produtos-apirest.herokuapp.com/api/produto
+* Acessar um produto especifico - GET: `https://produtos-apirest.herokuapp.com/api/produto/{id}`
+-----------------
+
+* Salvar um produto - POST: `https://produtos-apirest.herokuapp.com/api/produto`
+  - O produto deve ser passado pelo body da requisição.
+-----------------
+
+* Atualizar um produto - PUT: `https://produtos-apirest.herokuapp.com/api/produto`
+  - Recebe as novas informações do produto(no body) e as altera.
+-----------------
+
+* Deletar um produto - Delete: `https://produtos-apirest.herokuapp.com/api/produto`
+  - Recebe o produto a ser deletado(apenas o ID já serve), no body e caso o produto exista ele irá deletar.
