@@ -1,9 +1,36 @@
+## API REST UTILIZANDO SPRING
 # produtos-apirest
-API REST de produtos com Swagger-ui. Disponível em https://produtos-apirest.herokuapp.com/swagger-ui.html#/produto45resource
 
+# DOCUMENTAÇÃO
+- **Hospedagem na heroku. Endereço principal:** <a href="https://produtos-apirest.herokuapp.com">https://produtos-apirest.herokuapp.com</a> 
 
-Acesso para lista de produtos: https://produtos-apirest.herokuapp.com/api/produtos
+- **Feita utilizando Swagger-ui**
+- **DOCUMENTAÇÃO Swagger-ui. Disponível em:**
+  <a href="https://produtos-apirest.herokuapp.com/swagger-ui.html#/produto45resource">/swagger-ui.html</a> 
 
-Acesso produto unico: https://produtos-apirest.herokuapp.com/api/produto/{id}
+## END POINT'S 
 
-Salvar, Atualizar e Deletar produto: https://produtos-apirest.herokuapp.com/api/produto
+- Acesso para lista de produtos: 
+  <a href="https://produtos-apirest.herokuapp.com/api/produtos">/api/produtos</a>
+  <br>
+  **Verbo HTTP: GET**
+##
+- Acesso produto unico: 
+  <a href="https://produtos-apirest.herokuapp.com/api/produto/{id}">/api/produto/{id}</a>
+  <br>
+  **Verbo HTTP: GET**
+##
+- Salvar produto: 
+  <a href="https://produtos-apirest.herokuapp.com/api/produto">/api/produto</a>
+  <br>
+  **Verbo HTTP: POST**
+##
+- Atualizar produto: 
+  <a href="https://produtos-apirest.herokuapp.com/api/produto">/api/produto</a>
+  <br>
+  **Verbo HTTP: PUT**
+##
+- Deletar produto: 
+  <a href="https://produtos-apirest.herokuapp.com/api/produto">/api/produto</a>
+  <br>
+  **Verbo HTTP: DELETE**
